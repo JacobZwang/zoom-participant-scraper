@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "zoom participant scraper",
+  "version": "0.1.0",
+  "description": "identifies if each zoom participant has their camera on or off by scraping html from zoom web client",
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://zoom.us/wc/*"]
+    }
+  ]
+}
